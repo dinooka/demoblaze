@@ -1,0 +1,12 @@
+{
+	"customer": [
+		{
+			"name": "Sam",
+			"country": "USA",
+			"city": "NY",
+			"creditCard": "5577 0000 5577 0004",
+			"month": "08",
+			"year": "2025"
+		}
+	]
+}
