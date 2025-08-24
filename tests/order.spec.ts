@@ -34,6 +34,7 @@ test.describe.serial("Verify order placement for a registered user", () => {
 
 		const productPage = new ProductPage(page);
 		await productPage.addProductToCart();
+		await productPage.navigateToCartPage();
 		await homePage.selectSecondLaptop();
 		await productPage.addProductToCart();
 		await productPage.navigateToCartPage();

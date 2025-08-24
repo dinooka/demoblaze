@@ -2,8 +2,7 @@ name: PAICE Login
 on:
   push:
     branches: [main]
-  schedule:
-    - cron: "0 0 */10 * *"
+
 jobs:
   test:
     timeout-minutes: 60
