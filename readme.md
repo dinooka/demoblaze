@@ -2,6 +2,8 @@
 
 Application : Online Electronic Shop
 
+Application URL : [Demoblaze](https://www.demoblaze.com)
+
 ## Getting Started
 
 Clone the repo & install the dependencies.
