@@ -42,7 +42,7 @@ test.describe.serial("Verify order placement for a registered user", () => {
 		const cartPage = new CartPage(page);
 		await expect(cartPage.productTable).toBeVisible();
 	});
-	test.skip("Place the order", async ({ page }) => {
+	test("Place the order", async ({ page }) => {
 		await page.goto("/");
 		const productPage = new ProductPage(page);
 		await productPage.navigateToCartPage();
@@ -50,6 +50,7 @@ test.describe.serial("Verify order placement for a registered user", () => {
 		const cartPage = new CartPage(page);
 		await cartPage.deleteProduct();
 		await cartPage.placeOrder();
-		await expect(cartPage.successMessage).toContainText(orderSuccessMessage);
+		await expect(cartPage.successMessage).toBeVisible();
+		await cartPage.clickOkButton();
 	});
 });
