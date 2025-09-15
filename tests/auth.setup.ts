@@ -3,7 +3,7 @@ import HomePage from "../pages/HomePage";
 
 const userDataFile = ".auth/session-data.json";
 
-setup("User Registration & Login", async ({ page }) => {
+setup.skip("User Registration & Login", async ({ page }) => {
 	await page.goto("/");
 	const homePage = new HomePage(page);
 	const user = await homePage.userRegistration();

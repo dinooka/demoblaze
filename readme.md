@@ -17,7 +17,3 @@ Run the tests.
 ```
 npm run app
 ```
-
-To be Done
-
-- [ ] Remove timeouts
