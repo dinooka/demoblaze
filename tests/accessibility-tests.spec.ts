@@ -19,4 +19,5 @@ test.describe("Accessibility Issues", () => {
 
 		expect(accessibilityScanResults.violations).toEqual([]);
 	});
+	test("Acs issues", async ({ page }, testInfo) => {});
 });
